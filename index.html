@@ -9,6 +9,11 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
 
+        @font-face {
+            font-family: 'Android';
+            src: url(fontes/idroid.otf);
+        }
+
         * {
             margin: 0px;
             padding: 0px;
@@ -34,6 +39,7 @@
         }
 
         nav {
+            padding: 8px;
             background-color: rgb(77, 81, 105);
             text-align: right;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322);
@@ -42,27 +48,37 @@
         nav > a {
             text-decoration: none;
             color: white;
-            padding: 40px;
+            padding: 50px;
             font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
             letter-spacing: 1px;
         }
 
+        nav > a:hover {
+            color: rgb(219, 211, 201);
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+
         main {
-            background-color: rgba(0, 0, 0, 0.616);
+            background-image: url(imagens/fundo.jpg);
             height: 100vw;
             margin: auto;
         }
 
         section {
             height: 100vw;
-            max-width: 800px;
+            max-width: 700px;
             background-color: #f3f7f6;
             margin: auto;
         }
 
         section > h1 {
+            font-family: "Android", Arial, Helvetica, sans-serif;
+            color: white;
             text-align: center;
             padding-top: 20px;
+            background-color: rgba(128, 0, 128, 0.171);
+            box-shadow: 1px 1px 1px black;
         }
 
         footer {
@@ -79,6 +95,21 @@
         footer a {
             color: white;
         }
+
+        div#foto {
+            display: flex;
+            padding: 10px;
+            background-color: rgb(235, 235, 235);
+        }
+
+        div#foto > p {
+            padding: 45px;
+            font-size: 1.5em;
+        }
+
+        div img {
+            border-radius: 50%;
+        }
  
     </style>
 </head>
@@ -93,7 +124,11 @@
     </nav>
     <main>
         <section id="apr">
-            <h1>Olá, eu sou a Isa!</h1>
+            <h1>Seja bem vindo(a) ao meu portfólio!</h1>
+            <div id="foto">
+                <img src="imagens/pequeno.jpg" alt="">
+                <p>Olá, eu me chamo Isabela. Sou uma estudante de análise e desenvolvimento de sistemas.</p>
+            </div>
         </section>
     </main>
 <footer>
